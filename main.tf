@@ -14,7 +14,6 @@ resource "aws_spot_instance_request" "rabbitmq" {
     var.tags,
     { Name = "${var.env}-rabbitmq" }
   )
-
 }
 
 resource "aws_route53_record" "main" {
